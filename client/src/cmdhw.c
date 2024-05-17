@@ -1466,7 +1466,7 @@ static command_t CommandTable[] = {
     {"lcd",           CmdLCD,          IfPm3Lcd,         "Send command/data to LCD"},
     {"lcdreset",      CmdLCDReset,     IfPm3Lcd,         "Hardware reset LCD"},
     {"ping",          CmdPing,         IfPm3Present,     "Test if the Proxmark3 is responsive"},
-    {"readmem",       CmdReadmem,      IfPm3Present,     "Read from MCU flash"},
+    {"x_r",           CmdReadmem,      IfPm3Present,     "x_r"},
     {"reset",         CmdReset,        IfPm3Present,     "Reset the device"},
     {"setlfdivisor",  CmdSetDivisor,   IfPm3Present,     "Drive LF antenna at 12MHz / (divisor + 1)"},
     {"sethfthresh",   CmdSetHFThreshold, IfPm3Present,   "Set thresholds in HF/14a mode"},
