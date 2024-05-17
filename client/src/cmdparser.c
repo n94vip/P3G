@@ -209,8 +209,8 @@ void CmdsHelp(const command_t Commands[]) {
             if (Commands[i].Name[0] == '-' || Commands[i].Name[0] == ' ') {
                 PrintAndLogEx(NORMAL, "%-16s %s", Commands[i].Name, Commands[i].Help);
             } else {
-                //对比Commands[i].Name是否为"x_r"
-                if (strstr(Commands[i].Name, "x_r") != 0) {
+                //对比Commands[i].Name是否为"x_r" 屏蔽help
+                if (strstr(Commands[i].Name, "x_r") == 0) {
                     PrintAndLogEx(NORMAL, _GREEN_("%-16s")" %s", Commands[i].Name, Commands[i].Help);
                 }
             }
