@@ -87,6 +87,9 @@ if [ "$fullgitinfoextra" != "$fullgitinfo" ]; then
     fullgitinfo46="${fullgitinfo%"${fullgitinfoextra}"}"
     fullgitinfo="${fullgitinfo46}..."
 fi
+
+# fullgitinfo="PM3GUI:https://github.com/rfidreadermaker/proxmark3-max"
+
 sha=$(
     pm3path=$(dirname -- "$0")/..
     cd "$pm3path" || return
@@ -125,7 +128,7 @@ const struct version_information_t SECTVERSINFO g_version_information = {
     1,
     1,
     $clean,
-    "$fullgitinfo",
+    "PM3GUI:https://github.com/rfidreadermaker/proxmark3-max",
     "$ctime",
     "$sha"
 };
